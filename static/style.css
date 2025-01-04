@@ -1,7 +1,14 @@
+:root {
+  --bg: #282828;
+  --txt: #fbf1c7;
+  --txt2: #fe8019;
+  --txt3: #d5c4a1;
+  --li: #83a598;
+}
 body {
 	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+	background: var(--bg) ;
+	color:  var(--txt);
 }
 
 main {
@@ -15,6 +22,22 @@ img {
 
 header h1 {
 	text-align: center ;
+	color: var(--txt2);
+}
+
+h2 {
+	text-align: left ;
+	color: var(--txt3);
+}
+
+h3 {
+	text-align: left ;
+	color: var(--txt3);
+}
+
+h4 {
+	text-align: left ;
+	color: var(--txt3);
 }
 
 footer {
@@ -42,4 +65,55 @@ footer {
 }
 #nextart,#prevart {
 	max-width: 33% ;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+a {
+color: var(--li);
+text-decoration: none;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 10px;
+  text-align: left;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+ul {
+  margin: 0; /* Remove margin around the entire list */
+  padding: 1; /* Remove padding around the entire list */
+}
+
+li {
+  margin-bottom: 0em; /* Adjust spacing between items */
+  padding: 0; /* Ensure no padding inside list items */
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  fill: var(--bg); /* Change the color */
+  stroke: var(--txt);
+}
+
+.feather-rss {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+	stroke: var(--li);
 }

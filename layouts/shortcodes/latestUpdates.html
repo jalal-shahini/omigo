@@ -1,6 +1,6 @@
 {{ range .Site.RegularPages | first 10 }}
 <ul>
-    <li> {{ .Date.Format "02/01/2006" }} – <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		<li> <small>{{ .Date.Format "02/01/2006" }}</small> – <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 </ul>
 {{ end }}
 

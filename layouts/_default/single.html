@@ -1,3 +1,21 @@
 {{ define "title" -}}
 {{ .Title }}
 {{- end }}
+
+{{ define "main" -}}
+<article>
+		<p><small><small>
+        {{ with .Params.tags }}
+        <strong>Tags:</strong>
+        {{ range $index, $tag := . }}
+            {{ if $index }}, {{ end }}<a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a>
+        {{ end }}
+		{{ end }} <br>
+        <strong>Word Count:</strong> {{ .WordCount }} <br>
+        <strong>Reading Time:</strong> {{ .ReadingTime }} min
+				</small></small></p>
+    <div>
+        {{ .Content }}
+    </div>
+</article>
+{{- end }}

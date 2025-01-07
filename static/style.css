@@ -1,14 +1,19 @@
 :root {
   --bg: #282828;
-  --txt: #fbf1c7;
-  --txt2: #fe8019;
-  --txt3: #d5c4a1;
-  --li: #83a598;
+  --fg0: #fbf1c7;
+  --orange: #d65d0e;
+  --orange2: #fe8019;
+  --blue: #458588;
+  --blue2: #83a598;
+  --green: #98971a;
+  --green2: #b8bb26;
+  --yellow: #d79921;
+  --gray: #a89984;
 }
 body {
 	font-family: sans-serif ;
 	background: var(--bg) ;
-	color:  var(--txt);
+	color:  var(--fg0);
 }
 
 main {
@@ -22,22 +27,27 @@ img {
 
 header h1 {
 	text-align: center ;
-	color: var(--txt2);
+	color: var(--orange);
 }
 
 h2 {
 	text-align: left ;
-	color: var(--txt3);
+	color: var(--orange2);
 }
 
 h3 {
 	text-align: left ;
-	color: var(--txt3);
+	color: var(--green);
 }
 
 h4 {
 	text-align: left ;
-	color: var(--txt3);
+	color: var(--green2);
+}
+
+h5 {
+	text-align: left ;
+	color: var(--yellow);
 }
 
 footer {
@@ -72,10 +82,16 @@ footer {
   width: 50%;
 }
 
-a {
-color: var(--li);
+a:link {
+color: var(--blue);
 text-decoration: none;
 }
+
+a:visited {
+color: var(--gray);
+text-decoration: none;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -108,12 +124,12 @@ svg {
   height: 40px;
   margin: 10px;
   fill: var(--bg); /* Change the color */
-  stroke: var(--txt);
+  stroke: var(--fg0);
 }
 
 .feather-rss {
     width: 20px;
     height: 20px;
     vertical-align: middle;
-	stroke: var(--li);
+	stroke: var(--blue2);
 }
